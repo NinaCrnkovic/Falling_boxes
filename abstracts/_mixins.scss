@@ -1,0 +1,16 @@
+@mixin box ($background, $width: 20%, $height: 40vh, $border: $border){
+    background: $background;
+    width: $width;
+    height: $height;
+    border: $border;
+}
+
+@mixin keyframes($animation-name) {
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+@mixin animation($str) {
+    animation: $str;
+}
